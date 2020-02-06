@@ -1,0 +1,619 @@
+[
+  {
+    "name": "commonEnd",
+    "parameters": [
+      {
+        "name": "a",
+        "type": "int",
+        "values": [
+          {
+            "value": "null"
+          },
+          {
+            "value": "empty"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "1,2"
+          },
+          {
+            "value": "1,2,3"
+          },
+          {
+            "value": "1,2,3,4"
+          },
+          {
+            "value": "1,2,3,4,5"
+          },
+          {
+            "value": "3,2,3"
+          },
+          {
+            "value": "3,2,3,4"
+          },
+          {
+            "value": "3,2,3,4,5"
+          }
+        ]
+      },
+      {
+        "name": "b",
+        "type": "int",
+        "values": [
+          {
+            "value": "null"
+          },
+          {
+            "value": "empty"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "1,2"
+          },
+          {
+            "value": "1,2,3"
+          },
+          {
+            "value": "1,2,3,4"
+          },
+          {
+            "value": "1,2,3,4,5"
+          },
+          {
+            "value": "7,2,3"
+          },
+          {
+            "value": "7,2,3,4"
+          },
+          {
+            "value": "7,2,3,4,5"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "endsMeet",
+    "parameters": [
+      {
+        "name": "values",
+        "type": "string",
+        "values": [
+          {
+            "value": "null"
+          },
+          {
+            "value": "empty"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "1,2"
+          },
+          {
+            "value": "1,2,3"
+          },
+          {
+            "value": "1,2,3,4"
+          },
+          {
+            "value": "1,2,3,4,5"
+          },
+          {
+            "value": "one"
+          },
+          {
+            "value": "one,two"
+          },
+          {
+            "value": "one,two,three"
+          },
+          {
+            "value": "one,two,three,four"
+          },
+          {
+            "value": "one,two,three,four,five"
+          }
+        ]
+      },
+      {
+        "name": "n",
+        "type": "int",
+        "values": [
+          {
+            "value": -1
+          },
+          {
+            "value": 0
+          },
+          {
+            "value": 1
+          },
+          {
+            "value": 2
+          },
+          {
+            "value": 3
+          },
+          {
+            "value": 4
+          },
+          {
+            "value": 5
+          },
+          {
+            "value": 6
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "difference",
+    "parameters": [
+      {
+        "name": "numbers",
+        "type": "int",
+        "values": [
+          {
+            "value": "null"
+          },
+          {
+            "value": "empty"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "1,2"
+          },
+          {
+            "value": "1,2,3"
+          },
+          {
+            "value": "1,2,3,4"
+          },
+          {
+            "value": "1,2,3,4,5"
+          },
+          {
+            "value": "9,8,7,6,5,4,3,2,1"
+          },
+          {
+            "value": "1,9,2,8,3,7,4,6,5"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "biggest",
+    "parameters": [
+      {
+        "name": "numbers",
+        "type": "double",
+        "values": [
+          {
+            "value": "null"
+          },
+          {
+            "value": "empty"
+          },
+          {
+            "value": "1.1"
+          },
+          {
+            "value": "1.1,2.2"
+          },
+          {
+            "value": "1.1,2.2,3.3"
+          },
+          {
+            "value": "1.1,2.2,3.3, 4.4"
+          },
+          {
+            "value": "1.1,2.2,3.3, 4.4, 5.5"
+          },
+          {
+            "value": "1.1,2.2,3.3, 4.4, 5.5, 6.6"
+          },
+          {
+            "value": "1.1,2.2,3.3,4.4,5.5,6.6,7.7"
+          },
+          {
+            "value": "1.1,2.2,3.3,4.4,5.5,6.6,7.7,8.8"
+          },
+          {
+            "value": "1.1,2.2,3.3,4.4,5.5,6.6,7.7,8.8,9.9"
+          },
+          {
+            "value": "1.1,2.2,3.3,4.4,5.5,6.6,7.7,8.8,9.9,10.0"
+          },
+          {
+            "value": "1.1,2.2,3.3,4.4,5.5,6.6,7.7,8.8,9.9,10.0,11.1"
+          },
+          {
+            "value": "1.1,2.2,3.3,4.4,5.5,6.6,7.7,8.8,9.9,10.0,11.1,12.2"
+          },
+          {
+            "value": "1.1,2.2,3.3,4.4,5.5,6.6,7.7,8.8,9.9,10.0,11.1,12.2,13.3"
+          },
+          {
+            "value": "9.9,8.8,7.7,6.6,5.5,4.4,3.3,2.2,1.1"
+          },
+          {
+            "value": "1.1,9.9,2.2,8.8,3.3,7.7,4.4,6.6,5.5"
+          },
+          {
+            "value": "1.1,1.1,1.1,1.1,1.1,1.1,1.1,1.1,1.1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "middle",
+    "parameters": [
+      {
+        "name": "values",
+        "type": "string",
+        "values": [
+          {
+            "value": "null"
+          },
+          {
+            "value": "empty"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "1, 2"
+          },
+          {
+            "value": "1, 2, 3"
+          },
+          {
+            "value": "1, 2, 3, 4"
+          },
+          {
+            "value": "1, 2, 3, 4, 5"
+          },
+          {
+            "value": "1, 2, 3, 4, 5, 6"
+          },
+          {
+            "value": "1, 2, 3, 4, 5, 6, 7"
+          },
+          {
+            "value": "1, 2, 3, 4, 5, 6, 7, 8"
+          },
+          {
+            "value": "1, 2, 3, 4, 5, 6, 7, 8, 9"
+          },
+          {
+            "value": "one"
+          },
+          {
+            "value": "one,two"
+          },
+          {
+            "value": "one,two,three"
+          },
+          {
+            "value": "one,two,three,four"
+          },
+          {
+            "value": "one,two,three,four,five"
+          },
+          {
+            "value": "one,two,three,four,five,six"
+          },
+          {
+            "value": "one,two,three,four,five,six,seven"
+          },
+          {
+            "value": "one,two,three,four,five,six,seven,eight"
+          },
+          {
+            "value": "one,two,three,four,five,six,seven,eight,nine"
+          },
+          {
+            "value": "1,2,3,4,5,6,7,8,9,10,one,two,three,four,five,six,seven,eight,nine"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "increasing",
+    "parameters": [
+      {
+        "name": "numbers",
+        "type": "int",
+        "values": [
+          {
+            "value": "null"
+          },
+          {
+            "value": "empty"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "1,2"
+          },
+          {
+            "value": "1,2,3"
+          },
+          {
+            "value": "1,2,3,4"
+          },
+          {
+            "value": "1,2,3,4,5"
+          },
+          {
+            "value": "9,8,7,6,5,4,3,2,1"
+          },
+          {
+            "value": "1,9,2,8,3,7,4,6,5"
+          },
+          {
+            "value": "1,1,1,2,2,2,3,3,3"
+          },
+          {
+            "value": "1,1,1,2,3,3,3,3,3"
+          },
+          {
+            "value": "1,2,2,3,4,5,5,5,5"
+          },
+          {
+            "value": "1,1,1,1,1,1,7,8,9"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "everywhere",
+    "parameters": [
+      {
+        "name": "values",
+        "type": "int",
+        "values": [
+          {
+            "value": "null"
+          },
+          {
+            "value": "empty"
+          },
+          {
+            "value": "1,2,1,4,1,6,1,8,1"
+          },
+          {
+            "value": "1,2,0,4,1,0,7,1,9"
+          },
+          {
+            "value": "1,2,3,2,5,2,7,2,9"
+          },
+          {
+            "value": "2,2,2,2,2,2,2,2,2"
+          },
+          {
+            "value": "1,2,0,4,2,0,7,2,9"
+          },
+          {
+            "value": "1,2,3,4,5,6,7,8,9"
+          },
+          {
+            "value": "1,2,3,4,5,6,7,8,9"
+          },
+          {
+            "value": "9,8,7,6,5,4,3,2,1"
+          }
+        ]
+      },
+      {
+        "name": "x",
+        "type": "int",
+        "values": [
+          {
+            "value": 0
+          },
+          {
+            "value": 1
+          },
+          {
+            "value": 2
+          },
+          {
+            "value": 3
+          },
+          {
+            "value": 4
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "consecutive",
+    "parameters": [
+      {
+        "name": "numbers",
+        "type": "int",
+        "values": [
+          {
+            "value": "null"
+          },
+          {
+            "value": "empty"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "1,2"
+          },
+          {
+            "value": "1,2,3"
+          },
+          {
+            "value": "2,2,2"
+          },
+          {
+            "value": "3,3,3"
+          },
+          {
+            "value": "1,2,3,4,5"
+          },
+          {
+            "value": "1,2,4,6,7,8,9"
+          },
+          {
+            "value": "1,3,5,6,7,8,9"
+          },
+          {
+            "value": "1,2,3,4,5,7,9"
+          },
+          {
+            "value": "1,3,4,6,7,9,10,12,13,15,16,18"
+          },
+          {
+            "value": "1,1,1,1,1,1,1,1,1,1,1"
+          },
+          {
+            "value": "2,2,2,2,2,2,2,2,2,2,2"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "balance",
+    "parameters": [
+      {
+        "name": "numbers",
+        "type": "int",
+        "values": [
+          {
+            "value": "null"
+          },
+          {
+            "value": "empty"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "1,1"
+          },
+          {
+            "value": "1,2,3"
+          },
+          {
+            "value": "1,3,4"
+          },
+          {
+            "value": "1,4,5"
+          },
+          {
+            "value": "2,4,6"
+          },
+          {
+            "value": "9,6,3"
+          },
+          {
+            "value": "1,1,1,1,1,1,1,1,1,9"
+          },
+          {
+            "value": "2,2,2,1,8,-1"
+          },
+          {
+            "value": "1,-1,-1,1"
+          },
+          {
+            "value": "0,0"
+          },
+          {
+            "value": "1,2,3,4,5"
+          },
+          {
+            "value": "6,7,8,9,10"
+          },
+          {
+            "value": "100,10,10,10,10,10,10,10,10,10"
+          },
+          {
+            "value": "999,10,100,1000"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "clumps",
+    "parameters": [
+      {
+        "name": "values",
+        "type": "string",
+        "values": [
+          {
+            "value": "null"
+          },
+          {
+            "value": "empty"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "1,1"
+          },
+          {
+            "value": "1,2,3"
+          },
+          {
+            "value": "1,3,3"
+          },
+          {
+            "value": "1,4,4,4,5,5,6,7"
+          },
+          {
+            "value": "2,4,6,8,10,10,12,14"
+          },
+          {
+            "value": "1,2,2,3,3,3,4,4,5"
+          },
+          {
+            "value": "1,1,1,1,1,1,1,1,1,9"
+          },
+          {
+            "value": "2,2,2,1,8,-1"
+          },
+          {
+            "value": "1,-1,-1,1,3,3,3,7,7,7,7,7,7,7"
+          },
+          {
+            "value": "0,0,1,0,0,0,1,0,0"
+          },
+          {
+            "value": "a,b,c,c,c,d,e"
+          },
+          {
+            "value": "abc,def,abc,abc,abc,def,abc"
+          },
+          {
+            "value": "abc,1,2,3,abc,7,7,7,abc,1,2,3,abc"
+          }
+        ]
+      }
+    ]
+  }
+]
