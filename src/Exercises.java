@@ -133,9 +133,31 @@ public class Exercises {
 	}
 
 	public boolean everywhere(ArrayList<Integer> numbers, int x) {
-		// write your code here
+		if (numbers == null || numbers.size() < 1) {
+			return false;
+		}
 
-		return false;	// default return value to ensure compilation
+		boolean previousInstance = false;
+		int space = 0;
+		for (int i = 0; i < numbers.size(); i++) {
+			if (numbers.get(i) == x) {
+				previousInstance = true;
+				space = 0;
+			} else {
+				if (i == 1 && previousInstance == false) {
+					return false;
+				} else if (previousInstance == false) {
+					space++;
+				}
+				previousInstance = false;
+			}
+
+			if (space == 2) {
+				return false;
+			}
+		}
+
+		return true;
 	}
 
 	public boolean consecutive(ArrayList<Integer> numbers) {
