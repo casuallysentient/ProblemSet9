@@ -15,9 +15,22 @@ public class Exercises {
 	}
 
 	public ArrayList<String> endsMeet(ArrayList<String> values, int n) {
-		// write your code here
+		if (values == null || values.size() < n || n <= 0) {
+			return new ArrayList<String>();
+		}
 
-		return null;	// default return value to ensure compilation
+		ArrayList<String> newString = new ArrayList<String>();
+		for (int i = 0; i < n; i++) {
+			newString.add(i, values.get(i));
+		}
+
+		int index = n;
+		for (int i = values.size() - n; i < values.size(); i++) {
+			newString.add(index, values.get(i));
+			index++;
+		}
+
+		return newString;
 	}
 
 	public int difference(ArrayList<Integer> numbers) {
