@@ -34,7 +34,24 @@ public class Exercises {
 	}
 
 	public int difference(ArrayList<Integer> numbers) {
-		// write your code here
+		if (numbers != null && numbers.size() >= 1) {
+			int maxValue = numbers.get(0);
+			int minValue = numbers.get(0);
+			for (int i = 0; i < numbers.size(); i++) {
+				if (i == 0) {
+					minValue = numbers.get(i);
+					maxValue = numbers.get(i);
+				}
+				if (maxValue < numbers.get(i)) {
+					maxValue = numbers.get(i);
+				}
+				if (minValue > numbers.get(i)) {
+					minValue = numbers.get(i);
+				}
+			}
+			int differenceOfValues = maxValue - minValue;
+			return differenceOfValues;
+		}
 
 		return -1;		// default return value to ensure compilation
 	}
