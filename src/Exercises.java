@@ -220,8 +220,33 @@ public class Exercises {
 	}
 
 	public int clumps(ArrayList<String> values) {
-		// write your code here
+		if (values == null) {
+			return -1;
+		}
+		for (int i = 0; i < values.size(); i++) {
+			if (values.get(i) == null) {
+				return -1;
+			}
+		}
 
-		return -1;		// default return value to ensure compilation
+		boolean isSame = false;
+		boolean previousSame = false;
+		String previous = "";
+		int numClumps = 0;
+
+		for (int i = 0; i < values.size(); i++) {
+			if (previous.equals(values.get(i))) {
+				isSame = true;
+				if (previousSame != true) {
+					numClumps++;
+				}
+			} else {
+				isSame = false;
+			}
+			previous = values.get(i);
+			previousSame = isSame;
+		}
+
+		return numClumps;
 	}
 }
