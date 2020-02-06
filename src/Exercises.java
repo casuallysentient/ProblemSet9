@@ -57,7 +57,29 @@ public class Exercises {
 	}
 
 	public double biggest(ArrayList<Double> numbers) {
-		// write your code here
+		if (numbers != null && numbers.size() >= 3 && numbers.size() % 2 == 1) {
+			boolean allPositive = true;
+			for (int i = 0; i < numbers.size(); i++) {
+				if (numbers.get(i) < 0) {
+					allPositive = false;
+				}
+			}
+			if (allPositive == true) {
+				double firstValue = numbers.get(0);
+				double lastValue = numbers.get(numbers.size() - 1);
+				int middleIndex = (int) Math.floor(numbers.size() / 2);
+				double middleValue = numbers.get(middleIndex);
+				double biggestValue = firstValue;
+				if (firstValue >= middleValue && firstValue >= lastValue) {
+					biggestValue = firstValue;
+				} else if (middleValue >= firstValue && middleValue >= lastValue) {
+					biggestValue = middleValue;
+				} else if (lastValue >= firstValue && lastValue >= middleValue) {
+					biggestValue = lastValue;
+				}
+				return biggestValue;
+			}
+		}
 
 		return -1;		// default return value to ensure compilation
 	}
